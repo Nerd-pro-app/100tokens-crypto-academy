@@ -112,7 +112,7 @@ export const mockNews = [
   {
     id: '3',
     title: 'New Regulations Set to Impact Cryptocurrency Markets',
-    excerpt: 'Regulatory bodies worldwide are introducing new frameworks for cryptocurrency oversight. Here's how it might affect investors.',
+    excerpt: 'Regulatory bodies worldwide are introducing new frameworks for cryptocurrency oversight. Here\'s how it might affect investors.',
     imageUrl: 'https://images.unsplash.com/photo-1634704784915-aacf363b021f?q=80&w=1000&auto=format&fit=crop',
     date: 'April 25, 2025',
     author: 'Legal Expert'
