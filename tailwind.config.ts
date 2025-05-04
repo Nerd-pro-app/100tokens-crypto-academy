@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				crypto: {
+					'orange': '#F97316',
+					'orange-light': '#FDBA74',
+					'dark': '#121212',
+					'dark-light': '#1E1E1E',
+					'gray': '#333333'
 				}
 			},
 			borderRadius: {
@@ -84,12 +92,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'floating': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: 1 },
+					'50%': { opacity: 0.7 }
+				},
+				'gradient-animation': {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'floating': 'floating 6s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+				'gradient-flow': 'gradient-animation 8s ease infinite'
+			},
+			backgroundImage: {
+				'crypto-pattern': "url('/images/crypto-bg-pattern.svg')",
+				'crypto-gradient': 'linear-gradient(45deg, #121212 0%, #F97316 100%)',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
