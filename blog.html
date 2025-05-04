@@ -4,18 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>100Tokens Academy - Your Gateway to Cryptocurrency Knowledge</title>
-    <meta name="description" content="100Tokens Academy provides comprehensive cryptocurrency education, courses, and resources for beginners and experts alike." />
+    <title>Blog - 100Tokens Academy</title>
+    <meta name="description" content="Latest cryptocurrency news, insights, and analysis from 100Tokens Academy." />
     <meta name="author" content="100Tokens Academy" />
-
-    <meta property="og:title" content="100Tokens Academy - Your Gateway to Cryptocurrency Knowledge" />
-    <meta property="og:description" content="Learn cryptocurrency trading, blockchain technology, DeFi, NFTs and more with our expert-led courses." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@100TokensAcademy" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +40,7 @@
             <div class="desktop-menu">
               <a href="index.html" class="nav-link">Home</a>
               <a href="courses.html" class="nav-link">Courses</a>
-              <a href="blog.html" class="nav-link">Blog</a>
+              <a href="blog.html" class="nav-link active">Blog</a>
               <button id="language-toggle" class="btn-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
@@ -86,80 +77,74 @@
         <div class="container">
           <a href="index.html" class="mobile-nav-link">Home</a>
           <a href="courses.html" class="mobile-nav-link">Courses</a>
-          <a href="blog.html" class="mobile-nav-link">Blog</a>
+          <a href="blog.html" class="mobile-nav-link active">Blog</a>
           <a href="signup.html" class="mobile-nav-link">Sign up</a>
           <a href="login.html" class="mobile-nav-link">Login</a>
         </div>
       </div>
 
       <main>
-        <!-- Hero Section -->
-        <div class="live-bg hero-section">
-          <div class="container text-center">
-            <div class="animate-floating logo-container">
-              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-logo">
-                <circle cx="50" cy="50" r="50" fill="#F97316" fill-opacity="0.1" />
-                <circle cx="50" cy="50" r="40" fill="#F97316" fill-opacity="0.2" />
-                <circle cx="50" cy="50" r="30" fill="#F97316" fill-opacity="0.4" />
-                <circle cx="50" cy="50" r="20" fill="#F97316" />
-                <path d="M50 38V62M38 50H62" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-
-            <h1 class="hero-title" data-en="Unlock the World of Cryptocurrency" data-ar="أطلق العنان لعالم العملات المشفرة">Unlock the World of Cryptocurrency</h1>
-            <p class="hero-subtitle" data-en="Learn from experts and master cryptocurrency trading, blockchain technology, and decentralized finance" data-ar="تعلم من الخبراء وأتقن تداول العملات المشفرة وتقنية البلوكتشين والتمويل اللامركزي">Learn from experts and master cryptocurrency trading, blockchain technology, and decentralized finance</p>
-
-            <div class="hero-cta">
-              <a href="courses.html" class="btn btn-primary btn-lg" data-en="Browse Courses" data-ar="تصفح الدورات">Browse Courses</a>
-              <a href="signup.html" class="btn btn-outline btn-lg" data-en="Sign Up" data-ar="التسجيل">Sign Up</a>
-            </div>
-
-            <div class="special-offer">
-              <p data-en="Special offer: Sign up now and get 20% off your first course!" data-ar="عرض خاص: سجل الآن واحصل على خصم 20٪ على دورتك الأولى!">Special offer: Sign up now and get 20% off your first course!</p>
-            </div>
+        <!-- Blog Header -->
+        <div class="page-header live-bg">
+          <div class="container">
+            <h1 data-en="Cryptocurrency Blog" data-ar="مدونة العملات المشفرة">Cryptocurrency Blog</h1>
+            <p data-en="Stay updated with the latest news, insights, and analysis" data-ar="ابق على اطلاع بأحدث الأخبار والرؤى والتحليلات">Stay updated with the latest news, insights, and analysis</p>
           </div>
         </div>
 
-        <!-- Popular Courses Section -->
-        <section class="courses-section">
+        <!-- Featured Article -->
+        <section class="featured-section">
           <div class="container">
-            <h2 class="section-heading" data-en="Popular Courses" data-ar="الدورات الشائعة">Popular Courses</h2>
-            
-            <div class="courses-grid" id="popular-courses">
-              <!-- Course cards will be populated by JavaScript -->
+            <div class="featured-article" id="featured-article">
+              <!-- Featured article will be populated by JavaScript -->
             </div>
           </div>
         </section>
 
-        <!-- Most Watched Courses Section -->
-        <section class="courses-section">
+        <!-- Blog Categories -->
+        <section class="categories-section">
           <div class="container">
-            <h2 class="section-heading" data-en="Most Watched Courses" data-ar="الدورات الأكثر مشاهدة">Most Watched Courses</h2>
-            
-            <div class="courses-grid" id="watched-courses">
-              <!-- Course cards will be populated by JavaScript -->
+            <div class="categories">
+              <button class="category-btn active" data-category="all" data-en="All" data-ar="الكل">All</button>
+              <button class="category-btn" data-category="news" data-en="News" data-ar="أخبار">News</button>
+              <button class="category-btn" data-category="analysis" data-en="Analysis" data-ar="تحليل">Analysis</button>
+              <button class="category-btn" data-category="tutorials" data-en="Tutorials" data-ar="دروس">Tutorials</button>
+              <button class="category-btn" data-category="opinion" data-en="Opinion" data-ar="رأي">Opinion</button>
             </div>
           </div>
         </section>
 
-        <!-- Most Participants Courses Section -->
-        <section class="courses-section">
-          <div class="container">
-            <h2 class="section-heading" data-en="Most Participants" data-ar="الأكثر مشاركة">Most Participants</h2>
+        <!-- Blog Articles -->
+        <section class="blog-section">
+          <div class="container">            
+            <div class="blog-grid" id="blog-articles">
+              <!-- Blog articles will be populated by JavaScript -->
+            </div>
             
-            <div class="courses-grid" id="participants-courses">
-              <!-- Course cards will be populated by JavaScript -->
+            <!-- Pagination -->
+            <div class="pagination">
+              <button class="pagination-btn" disabled>&laquo; Previous</button>
+              <div class="pagination-numbers">
+                <button class="pagination-number active">1</button>
+                <button class="pagination-number">2</button>
+                <button class="pagination-number">3</button>
+              </div>
+              <button class="pagination-btn">Next &raquo;</button>
             </div>
           </div>
         </section>
 
-        <!-- Latest News Section -->
-        <section class="news-section">
+        <!-- Newsletter -->
+        <section class="newsletter-section">
           <div class="container">
-            <h2 class="section-heading" data-en="Latest News" data-ar="أحدث الأخبار">Latest News</h2>
-            
-            <div class="news-grid" id="latest-news">
-              <!-- News cards will be populated by JavaScript -->
+            <div class="newsletter">
+              <h2 data-en="Stay Updated" data-ar="ابق على اطلاع">Stay Updated</h2>
+              <p data-en="Subscribe to our newsletter for the latest cryptocurrency news and updates" data-ar="اشترك في نشرتنا الإخبارية للحصول على أحدث أخبار وتحديثات العملات المشفرة">Subscribe to our newsletter for the latest cryptocurrency news and updates</p>
+              
+              <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary" data-en="Subscribe" data-ar="اشتراك">Subscribe</button>
+              </form>
             </div>
           </div>
         </section>
